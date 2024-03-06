@@ -2,25 +2,28 @@
 
 
 
-Sathana Suganthasri und Carina Sutter
+Nicola Karrer und Carina Sutter
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-| 16.08.2023 | 0.0.1   | User Story fertig erstellt. |
-| 30.08.2023 | 0.0.2    | Das Projekt fertig erstellt |
+| 16.08.2023 | 0.0.1   |
 
 ## 1 Informieren
 
 ### 1.1 Ihr Projekt
 
-Der Spieler muss Zahlen erraten, der Computer als zufällige Zahl gespeichert hatte. 
+Unser Projekt besteht aus einem Rogue Game.
 
 
 ### 1.2 Anforderungen
 
 | US-№ | Beschreibung                       |
 | ---- | ---------------------------------- |
-| 1    |
+| 1    | Der User hat ein Inventar|
+| 2 | Der User hat slots für Kopf, Körper, Hände und Füsse |
+| 3 | Der User hat slots für Zaubertränke, Zauberstäbe und Schriftrollen |
+| 4 | Der User hat eine gewisse anzahl an Materialien bevor sie aufgebraucht sind |
+| 5 |   
 
 ### 1.3 Testfälle
 

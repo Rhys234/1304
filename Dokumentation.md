@@ -6,13 +6,13 @@ Nicola Karrer und Carina Sutter
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-| 16.08.2023 | 0.0.1   |
+| 13.03.2023 | 0.0.1   | Basis Rogue Game Code |
 
 ## 1 Informieren
 
 ### 1.1 Ihr Projekt
 
-Unser Projekt besteht aus einem Rogue Game.
+Unser Projekt besteht ein Rogue Game zu entwickeln. Da wir aber noch zu wenig Erfahrung haben, werden wir den Grundcode von einem Entwickler kopieren, der uns vorgeschlagen wurde und dann das Spiel so anpassen...
 
 
 ### 1.2 Anforderungen von Webseite

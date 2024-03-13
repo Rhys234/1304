@@ -45,6 +45,28 @@ Unser Projekt besteht aus einem Rogue Game.
 | 24 | Erscheinen von loot und Monstern basierend auf Level|
 | 25 | Map feature wie Räume, Gänge, Türen und Treppen mit denen Monster und Spieler interagieren können.|
 
+Dies sind zwar die Anforderungen von der Webseite, jedoch ist nichts von dem im Tutorial drin, von wo wir unseren Code haben. Deshalb werden wir uns selber Sachen überlegen und diese Einfügen.
+Was wir vom Tutorial erhalten haben ist:
+
+| 1 | GUI wird generiert |
+| 2 | Farben anpassung |
+| 3 | Dungeonmapräume werden generiert |
+| 4 | Spieler wird generiert |
+| 5 | Spieler kann sich bewegen |
+| 6 | Räume werden mit Gängen verknüpft |
+| 7 | Informationen werden im Terminal ausgegeben |
+| 8 | Spieler hat Stats |
+| 9 | Monster werden generiert |
+| 10 | Monster haben Stats |
+| 11 | Spieler kann Monster killen |
+| 12 | Time-based Kampf system |
+| 13 | Monster können sich bewegen |
+| 14 | Türen die man öffnen kann |
+
+Jedoch greifen die Monster den Spieler noch nicht an und sie bewegen sich auch nicht. Deshalb werden wir sie in unseren Anforderungen mit einbeziehen.
+
+### 1.2 Anforderungen von Uns
+
 ### 1.3 Testfälle
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
@@ -55,20 +77,20 @@ Unser Projekt besteht aus einem Rogue Game.
 
 | AP-№ | Frist | Beschreibung | Zuständig | geplante Zeit | 
 | ---- | ----- | --------- | ------------ | -------------- |
-| 1.A  | 
-
-
-Total: 13
+| 1.A  | 13.03 | Basis Code holen und verstehen | - | 180min |
+| 2.A  | 20.03 | Fehlerhafte Funktionen korrigieren | - | 180min |
+| 3.A  | 20.03 | Eigene Funktionen einplanen | - | 540min |
 
 
 ## 3 Entscheiden
 
+Wir haben uns dazu entschlossen, nichts genaues zu planen und unsere Ideen bei der Entwicklung hinzuzufügen, damit wir flexibel bleiben und das Spiel so gestalten können, wie wir es gerne möchten.
 
 ## 4 Realisieren
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  | 
+| 1.A  | 13.03 | Nicola    | 180min | 180min |
 
 ## 5 Kontrollieren
 

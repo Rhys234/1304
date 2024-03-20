@@ -45,6 +45,8 @@ Unser Projekt besteht ein Rogue Game zu entwickeln. Da wir aber noch zu wenig Er
 | 24 | Erscheinen von loot und Monstern basierend auf Level|
 | 25 | Map feature wie Räume, Gänge, Türen und Treppen mit denen Monster und Spieler interagieren können.|
 
+### 1.2 Anforderungen von Uns
+
 Dies sind zwar die Anforderungen von der Webseite, jedoch ist nichts von dem im Tutorial drin, von wo wir unseren Code haben. Deshalb werden wir uns selber Sachen überlegen und diese Einfügen.
 Was wir vom Tutorial erhalten haben ist:
 
@@ -66,8 +68,6 @@ Was wir vom Tutorial erhalten haben ist:
 | 14 | Türen die man öffnen kann |
 
 Jedoch greifen die Monster den Spieler noch nicht an und sie bewegen sich auch nicht. Deshalb werden wir sie in unseren Anforderungen mit einbeziehen.
-
-### 1.2 Anforderungen von Uns
 
 ### 1.3 Testfälle
 

@@ -48,6 +48,8 @@ Unser Projekt besteht ein Rogue Game zu entwickeln. Da wir aber noch zu wenig Er
 Dies sind zwar die Anforderungen von der Webseite, jedoch ist nichts von dem im Tutorial drin, von wo wir unseren Code haben. Deshalb werden wir uns selber Sachen überlegen und diese Einfügen.
 Was wir vom Tutorial erhalten haben ist:
 
+|US-N  | BEschreibung                         |
+| ---- | ------------------------------------ |
 | 1 | GUI wird generiert |
 | 2 | Farben anpassung |
 | 3 | Dungeonmapräume werden generiert |

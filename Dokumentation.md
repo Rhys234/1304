@@ -6,7 +6,8 @@ Nicola Karrer und Carina Sutter
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-| 13.03.2023 | 0.0.1   | Basis Rogue Game Code |
+| 13.03.2024 | 0.0.1   | Basis Rogue Game Code |
+| 20.03.2024 | 0.0.2   | Behebung von Fehlern + eigener Einbau von unseren Ideen |
 
 ## 1 Informieren
 
@@ -63,9 +64,8 @@ Was wir vom Tutorial erhalten haben ist:
 | 9 | Monster werden generiert |
 | 10 | Monster haben Stats |
 | 11 | Spieler kann Monster killen |
-| 12 | Time-based Kampf system |
-| 13 | Monster können sich bewegen |
-| 14 | Türen die man öffnen kann |
+| 12 | Monster können sich bewegen |
+| 13 | Türen die man öffnen kann |
 
 Jedoch greifen die Monster den Spieler noch nicht an und sie bewegen sich auch nicht. Deshalb werden wir sie in unseren Anforderungen mit einbeziehen.
 

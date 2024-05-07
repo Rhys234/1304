@@ -62,13 +62,21 @@ Wir haben uns dazu entschlossen, nichts genaues zu planen und unsere Ideen bei d
 
 Ideen:
 Tower-based Rogue-like game
+
 Je höher man geht, desto stärkere Monster kommen und die schwierigkeit erhöht sich dadurch.
+
 Die Gegner droppen immer bessere Ausrüstung, die man dann verbessern kann.
+
 Jedes 5er Level ist ein Puzzle raum, wo man nicht nur Stärke braucht.
+
 Jedes 10er Level ist ein Boss raum, der nochmal um einiges schwerer ist als das vorherige Level.
+
 Waffen mit verschiedenen Attributen: Schwert, Lang-schwert, Bogen, Hammer, Speer
+
 Monster mit unterschiedlichen Stats: Kobold, Zombie, Ghoul, Mage, Skeleton, Slime
+
 Bosses: Necron the Necromancer, Storm the Skycaster, Goldor the Titan, Maxor the Wither
+
 
 ## 4 Realisieren
 

@@ -7,49 +7,20 @@ Nicola Karrer und Carina Sutter
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
 | 13.03.2024 | 0.0.1   | Basis Rogue Game Code |
-| 20.03.2024 | 0.0.2   | Behebung von Fehlern + eigener Einbau von unseren Ideen |
+| 20.03.2024 | 0.0.2   | Basis Rogue Game Code + Sammlung von Ideen |
+| 27.03.2024 | 1.0.0   | Behebung von Fehlern und Implementierung von unseren eigenen Ideen|
+| 03.04.2024 | 1.0.1   | Implementation von unseren eigenen Ideen und Dokumentation|
 
 ## 1 Informieren
 
 ### 1.1 Ihr Projekt
 
-Unser Projekt besteht ein Rogue Game zu entwickeln. Da wir aber noch zu wenig Erfahrung haben, werden wir den Grundcode von einem Entwickler kopieren, der uns vorgeschlagen wurde und dann das Spiel so anpassen...
+Unser Projekt besteht ein Rogue Game zu entwickeln. Da wir aber noch zu wenig Erfahrung haben, werden wir den Grundcode von einem Entwickler kopieren, der uns vorgeschlagen wurde und dann das Spiel auf unsere eigene Weise erweitern.
 
 
-### 1.2 Anforderungen von Webseite
+### 1.2 Anforderungen
 
-| US-№ | Beschreibung                       | Status |
-| ---- | ---------------------------------- | ------ |
-| 1    | Der User hat ein Inventar| OK|
-| 2 | Der User hat slots für Kopf, Körper, Hände und Füsse | NOK |
-| 3 | Der User hat slots für Zaubertränke, Zauberstäbe und Schriftrollen | NOK |
-| 4 | Der User hat eine gewisse anzahl an Materialien bevor sie aufgebraucht sind | NOK |
-| 5 | Ein robustes Beispiel an Fähigkeiten, die der Spieler lernen kann| NOK |
-| 6 | Gezielte Angriffe wie Magische Bomben die einzelne Monster auf Distanz treffen können| NOK |
-| 7 | Areale Attacken die Monster treffen die in dem Areal sind | NOK |
-| 8 | Linien Attacken wie Blitzstrahlen die durch Monster gefeuert werden können | NOK |
-| 9 | Heilungskräfte | NOK |
-| 10 | Map aufdeckungs kräfte | NOK|
-| 11 | Messer spezial Attacken wie ein Wirbelwind Attacke die alle Monster treffen | NOK |
-| 12 | Interessante Sets von Monster mit verschiedenen AI| Am bearbeiten |
-| 13 | Goblins die Items aufsammeln können und gebrauchen | NOK |
-| 14 | Feinde die fliehen wenn sie verwunded wurden und alarmieren andere Gruppen von Monster wo der Spieler ist| NOK |
-| 15 | Schleims die sich aufteilen in mehrere Kopien wenn sie getroffen werden. | NOK |
-| 16 | ein einzig artiges combat system| OK |
-| 17 | ein Plan system | NOK|
-| 18 | kein I-Go/You-Go| NOK |
-| 19 | Spieler seine Geschwindigkeit verwändert sich basierend auf welche Items er ausgestattet hat| NOK |
-| 20 | Monster können varieren| NOK |
-| 21 | Ein Messaging system| OK |
-| 22| Zeigt detailierte combat Nachrichten in einem log| OK |
-| 23 | System zum generieren von irgendwelchen Levels| OK |
-| 24 | Erscheinen von loot und Monstern basierend auf Level| am bearbeiten |
-| 25 | Map feature wie Räume, Gänge, Türen und Treppen mit denen Monster und Spieler interagieren können.| OK |
-
-### 1.2 Anforderungen von Uns
-
-Dies sind zwar die Anforderungen von der Webseite, jedoch ist nichts von dem im Tutorial drin, von wo wir unseren Code haben. Deshalb werden wir uns selber Sachen überlegen und diese Einfügen.
-Was wir vom Tutorial erhalten haben ist:
+Dies sind die Anforderungen, die wir vom Code der Webseite herausnahmen. Da wir noch nicht entschieden haben, was wir genau dazu implementieren, werden diese später bei den Entscheidungen hinzugefügt werden.
 
 | US-N | Beschreibung                         |
 | ---- | ------------------------------------ |
@@ -67,39 +38,58 @@ Was wir vom Tutorial erhalten haben ist:
 | 12 | Monster können sich bewegen |
 | 13 | Türen die man öffnen kann |
 
-Jedoch greifen die Monster den Spieler noch nicht an und sie bewegen sich auch nicht. Deshalb werden wir sie in unseren Anforderungen mit einbeziehen.
-
-### 1.3 Testfälle
-
-| TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
-| ---- | ------------ | ------- | ----------------- |
-| 1.1  | 
 
 ## 2 Planen
 
-| AP-№ | Frist | Beschreibung | Zuständig | geplante Zeit | 
-| ---- | ----- | --------- | ------------ | -------------- |
-| 1.A  | 13.03 | Basis Code holen und verstehen | - | 180min |
-| 2.A  | 20.03 | Fehlerhafte Funktionen korrigieren | - | 180min |
-| 3.A  | 20.03 | Eigene Funktionen einplanen | - | 540min |
+| AP-№  | Frist | Beschreibung               | Zuständig    | geplante Zeit | 
+| ----- | ----- | -------------------------- | ------------ | -------------- |
+| 1.A   | 13.03 | GUI generieren             | Nicola | 10min |
+| 2.A   | 13.03 | Farb palette anpassen      | Nicola | 10min |
+| 3.A   | 13.03 | Map generierung            | Nicola | 60min |
+| 4.A   | 13.03 | Player generierung         | Nicola | 30min |
+| 5.A   | 13.03 | Player Inputs              | Nicola | 20min |
+| 6.A   | 13.03 | Room connections           | Nicola | 30min |
+| 7.A   | 13.03 | Nachrichten ausgabe        | Nicola | 20min |
+| 8.A   | 20.03 | Player stats               | Nicola | 25min |
+| 9.A   | 20.03 | Monster generierung        | Nicola | 30min |
+| 10.A  | 20.03 | Individualität der Monster | Nicola | 20min |
+| 11.A  | 20.03 | Combat system              | Nicola | 45min |
+| 12.A  | 20.03 | Attacken der Monster       | Nicola | 45min |
+| 13.A  | 20.03 | Türen, die man öffnen kann | Nicola | 15min |
 
 
 ## 3 Entscheiden
 
 Wir haben uns dazu entschlossen, nichts genaues zu planen und unsere Ideen bei der Entwicklung hinzuzufügen, damit wir flexibel bleiben und das Spiel so gestalten können, wie wir es gerne möchten.
 
+Ideen:
+Tower-based Rogue-like game
+Je höher man geht, desto stärkere Monster kommen und die schwierigkeit erhöht sich dadurch.
+Die Gegner droppen immer bessere Ausrüstung, die man dann verbessern kann.
+Jedes 5er Level ist ein Puzzle raum, wo man nicht nur Stärke braucht.
+Jedes 10er Level ist ein Boss raum, der nochmal um einiges schwerer ist als das vorherige Level.
+Waffen mit verschiedenen Attributen: Schwert, Lang-schwert, Bogen, Hammer, Speer
+Monster mit unterschiedlichen Stats: Kobold, Zombie, Ghoul, Mage, Skeleton, Slime
+Bosses: Necron the Necromancer, Storm the Skycaster, Goldor the Titan, Maxor the Wither
+
 ## 4 Realisieren
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
 | 1.A  | 13.03 | Nicola    | 180min | 180min |
+| 2.A  | 20.03 | Nicola    | 180min | 180min |
+| 3.A  | 27.03 | Nicola    | 180min | 180min |
+| 4.A  | 03.04 | Nicola    | 180min | 180min |
+| 5.A  | 03.04 | Nicola    | 180min | 180min |
+| 6.A  | 03.04 | Nicola    | 180min | 180min |
+| 7.A  | 03.04 | Nicola    | 180min | 180min |
+| 8.A  | 03.04 | Nicola    | 180min | 180min |
+| 9.A  | 03.04 | Nicola    | 180min | 180min |
+| 10.A  | 03.04 | Nicola    | 180min | 180min |
+| 11.A  | 03.04 | Nicola    | 180min | 180min |
+| 12.A  | 03.04 | Nicola    | 180min | 180min |
+| 13.A  | 03.04 | Nicola    | 180min | 180min |
 
-## 5 Kontrollieren
+## 5 Reflexion
 
-
-| TC-№ | Datum | Resultat | Tester |
-| ---- | ----- | -------- | ------ |
-| 1.1  | 
-
-
-
+Ka

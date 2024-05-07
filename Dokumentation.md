@@ -1,7 +1,5 @@
 # Projekt-Dokumentation
 
-
-
 Nicola Karrer und Carina Sutter
 
 | Datum | Version | Zusammenfassung                                              |
@@ -76,19 +74,20 @@ Bosses: Necron the Necromancer, Storm the Skycaster, Goldor the Titan, Maxor the
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  | 13.03 | Nicola    | 180min | 180min |
-| 2.A  | 20.03 | Nicola    | 180min | 180min |
-| 3.A  | 27.03 | Nicola    | 180min | 180min |
-| 4.A  | 03.04 | Nicola    | 180min | 180min |
-| 5.A  | 03.04 | Nicola    | 180min | 180min |
-| 6.A  | 03.04 | Nicola    | 180min | 180min |
-| 7.A  | 03.04 | Nicola    | 180min | 180min |
-| 8.A  | 03.04 | Nicola    | 180min | 180min |
-| 9.A  | 03.04 | Nicola    | 180min | 180min |
-| 10.A  | 03.04 | Nicola    | 180min | 180min |
-| 11.A  | 03.04 | Nicola    | 180min | 180min |
-| 12.A  | 03.04 | Nicola    | 180min | 180min |
-| 13.A  | 03.04 | Nicola    | 180min | 180min |
+| 1.A  | 13.03 | Nicola    | 10min | 15min |
+| 2.A  | 20.03 | Nicola    | 10min | 15min |
+| 3.A  | 27.03 | Nicola    | 60min | 60min |
+| 4.A  | 03.04 | Nicola    | 30min | 30min |
+| 5.A  | 03.04 | Nicola    | 20min | 20min |
+| 6.A  | 03.04 | Nicola    | 30min | 40min |
+| 7.A  | 03.04 | Nicola    | 20min | 20min |
+| 8.A  | 03.04 | Nicola    | 25min | 25min |
+| 9.A  | 03.04 | Nicola    | 30min | 40min |
+| 10.A  | 03.04 | Nicola   | 20min | 20min |
+| 11.A  | 03.04 | Nicola   | 45min | 60min |
+| 12.A  | 03.04 | Nicola   | 45min | 60min |
+| 13.A  | 03.04 | Nicola   | 15min | 15min |
+
 
 ## 5 Reflexion
 

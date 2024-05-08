@@ -109,11 +109,9 @@ namespace RogueSharpV3Tutorial.Systems
             return _map;
 
             // Call right before calling PlacePlayer();
-            CreateStairs();
-
-            // Previous code
-            PlacePlayer();
+            //CreateStairs();
         }
+
         // Given a rectangular area on the map
         // set the cell properties for that area to true
         private void CreateRoom(Rectangle room)
@@ -179,9 +177,11 @@ namespace RogueSharpV3Tutorial.Systems
                         {
                             // Temporarily hard code this monster to be created at level 1
                             var monster = Kobold.Create(1);
+                            var monster2 = Zombie.Create(2);
+                            var monster3 = Ghoul.Create(3);
                             monster.X = randomRoomLocation.X;
                             monster.Y = randomRoomLocation.Y;
-                            _map.AddMonster(monster);
+                            _map.AddMonster(monster, monster2, monster3);
                         }
                     }
                 }

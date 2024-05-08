@@ -20,5 +20,7 @@ namespace RogueSharpV3Tutorial.Core
         public static RLColor Door = Swatch.ComplimentLighter;
         public static RLColor DoorBackgroundFov = Swatch.ComplimentDarker;
         public static RLColor DoorFov = Swatch.ComplimentLightest;
+        public static RLColor ZombieColor = Swatch.DbGrass;
+        public static RLColor GhoulColor = Swatch.DbMetal;
     }
 }

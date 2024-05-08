@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using RLNET;
 using Rogue_Game.Core;
+using Rogue_Game.Systems;
 using RogueSharp;
+using RogueSharpRLNetSamples.Systems;
+using RogueSharpV3Tutorial.Interfaces;
 namespace RogueSharpV3Tutorial.Core
 {
     // Our custom DungeonMap class extends the base RogueSharp Map class
@@ -22,6 +26,8 @@ namespace RogueSharpV3Tutorial.Core
             _livingMonsterCount = 0;
             Rooms = new List<Rectangle>();
             Doors = new List<Door>();
+            var schedulingSystem = new SchedulingSystem();
+            schedulingSystem.Clear();
         }
         // This method will be called any time we move the player to update field-of-view
         public void UpdatePlayerFieldOfView()
@@ -93,9 +99,11 @@ namespace RogueSharpV3Tutorial.Core
             Game.Initialize();
             Game.SchedulingSystem.Add(player);
         }
-        public void AddMonster(Monster monster)
+        public void AddMonster(Monster monster, Monster monster2, Monster monster3)
         {
             _monsters.Add(monster);
+            _monsters.Add(monster2);
+            _monsters.Add(monster3);
             _livingMonsterCount++;
             // After adding the monster to the map make sure to make the cell not walkable
             SetIsWalkable(monster.X, monster.Y, false);
@@ -158,7 +166,6 @@ namespace RogueSharpV3Tutorial.Core
         // It will render all of the symbols/colors for each cell to the map sub console
         public void Draw(RLConsole mapConsole, RLConsole statConsole)
         {
-            // Old code
             foreach (Cell cell in GetAllCells())
             {
                 SetConsoleSymbolForCell(mapConsole, cell);
@@ -167,9 +174,6 @@ namespace RogueSharpV3Tutorial.Core
             {
                 door.Draw(mapConsole, this);
             }
-            NextStairs.Draw(mapConsole, this);
-
-            // New code starts here ...
 
             // Keep an index so we know which position to draw monster stats at
             int i = 0;
@@ -187,6 +191,17 @@ namespace RogueSharpV3Tutorial.Core
                 }
             }
         }
+        /*
+        public void GenerateNextStairs(RLConsole mapConsole, IMap map)
+        {
+            Point randomWalkableLocation = GetRandomWalkableLocationOnMap(map);
+            Game.MessageLog.Add($"All Monsters Defeated");
+            NextStairs = new Stairs();
+            NextStairs.X = randomWalkableLocation.X;
+            NextStairs.Y = randomWalkableLocation.Y;
+            NextStairs.Draw(mapConsole, map);
+        }
+        */
         private void SetConsoleSymbolForCell(RLConsole console, Cell cell)
         {
             // When we haven't explored a cell yet, we don't want to draw anything
@@ -223,12 +238,22 @@ namespace RogueSharpV3Tutorial.Core
         }
         public bool AllMonstersDefeated()
         {
-            return _livingMonsterCount == 0;
+            if (_livingMonsterCount == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
+        /*
         public bool CanMoveDownToNextLevel()
         {
             Player player = Game.Player;
             return NextStairs.X == player.X && NextStairs.Y == player.Y;
         }
+        */
     }
 }

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Rogue_Game.Core
 {
@@ -26,18 +27,9 @@ namespace Rogue_Game.Core
             {
                 return;
             }
-
             Symbol = '<';
-            if (map.IsInFov(X, Y))
-            {
-                Color = Colors.Player;
-            }
-            else
-            {
-                Color = Colors.Floor;
-            }
 
-            console.Set(X, Y, Color, null, Symbol);
+            console.Set(X, Y, RLColor.LightMagenta, RLColor.Yellow, Symbol,0);
         }
 
     }

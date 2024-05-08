@@ -19,7 +19,7 @@ public class Kobold : Monster
             MaxHealth = health,
             Name = "Kobold",
             Speed = 14,
-            Symbol = 'k'
+            Symbol = 'K'
         };
     }
 }

@@ -93,49 +93,33 @@ namespace RogueSharpV3Tutorial
             bool didPlayerAct = false;
             RLKeyPress keyPress = _rootConsole.Keyboard.GetKeyPress();
 
-            if (CommandSystem.IsPlayerTurn)
+            if (keyPress != null)
             {
-                if (keyPress != null)
+                if (keyPress.Key == RLKey.W)
                 {
-                    if (keyPress.Key == RLKey.Up)
-                    {
-                        didPlayerAct = CommandSystem.MovePlayer(Direction.Up);
-                    }
-                    else if (keyPress.Key == RLKey.Down)
-                    {
-                        didPlayerAct = CommandSystem.MovePlayer(Direction.Down);
-                    }
-                    else if (keyPress.Key == RLKey.Left)
-                    {
-                        didPlayerAct = CommandSystem.MovePlayer(Direction.Left);
-                    }
-                    else if (keyPress.Key == RLKey.Right)
-                    {
-                        didPlayerAct = CommandSystem.MovePlayer(Direction.Right);
-                    }
-                    else if (keyPress.Key == RLKey.Escape)
-                    {
-                        _rootConsole.Close();
-                    }
+                    didPlayerAct = CommandSystem.MovePlayer(Direction.Up);
                 }
-
-                if (didPlayerAct)
+                else if (keyPress.Key == RLKey.S)
                 {
-                    _renderRequired = true;
-                    CommandSystem.EndPlayerTurn();
+                    didPlayerAct = CommandSystem.MovePlayer(Direction.Down);
+                }
+                else if (keyPress.Key == RLKey.A)
+                {
+                    didPlayerAct = CommandSystem.MovePlayer(Direction.Left);
+                }
+                else if (keyPress.Key == RLKey.D)
+                {
+                    didPlayerAct = CommandSystem.MovePlayer(Direction.Right);
+                }
+                else if (keyPress.Key == RLKey.Escape)
+                {
+                    _rootConsole.Close();
                 }
             }
-            else if (keyPress.Key == RLKey.Period)
+
+            if (didPlayerAct)
             {
-                if (DungeonMap.CanMoveDownToNextLevel())
-                {
-                    MapGenerator mapGenerator = new MapGenerator(_mapWidth, _mapHeight, 20, 13, 7, ++_mapLevel);
-                    DungeonMap = mapGenerator.CreateMap();
-                    MessageLog = new MessageLog();
-                    CommandSystem = new CommandSystem();
-                    _rootConsole.Title = $"RougeSharp RLNet Tutorial - Level {_mapLevel}";
-                    didPlayerAct = true;
-                }
+                _renderRequired = true;
             }
         }
         // Event handler for RLNET's Render event

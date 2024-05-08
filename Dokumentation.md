@@ -18,7 +18,7 @@ Unser Projekt besteht ein Rogue Game zu entwickeln. Da wir aber noch zu wenig Er
 
 ### 1.2 Anforderungen
 
-Dies sind die Anforderungen, die wir vom Code der Webseite herausnahmen. Da wir noch nicht entschieden haben, was wir genau dazu implementieren, werden diese später bei den Entscheidungen hinzugefügt werden.
+Dies sind die Anforderungen, die wir vom Code der Webseite herausnahmen. Da wir noch nicht entschieden haben, was wir genau dazu implementieren, werden diese User Storys später mit einem X hinzugefügt.
 
 | US-N | Beschreibung                         |
 | ---- | ------------------------------------ |
@@ -35,6 +35,10 @@ Dies sind die Anforderungen, die wir vom Code der Webseite herausnahmen. Da wir 
 | 11 | Spieler kann Monster killen |
 | 12 | Monster können sich bewegen |
 | 13 | Türen die man öffnen kann |
+| X14 | Überarbeitung Combat-System |
+| X15 | Treppen werden richtig generiert |
+| X16 | Treppen führen ins nächste Level |
+| X17 | Verschiedene Arten von Monstern |
 
 
 ## 2 Planen
@@ -54,6 +58,10 @@ Dies sind die Anforderungen, die wir vom Code der Webseite herausnahmen. Da wir 
 | 11.A  | 20.03 | Combat system              | Nicola | 45min |
 | 12.A  | 20.03 | Attacken der Monster       | Nicola | 45min |
 | 13.A  | 20.03 | Türen, die man öffnen kann | Nicola | 15min |
+| X14.1 | 27.03 | Monster greifen Spieler an | Nicola | 180min |
+| X15.1 | 27.03 | Treppen werden generiert   | Carina | 180min |
+| X16.1 | 03.04 | Funktion der Treppen       | Carina | 180min |
+| X17.1 | 03.04 | Mehr Arten von Monstern    | Nicola | 180min |
 
 
 ## 3 Entscheiden
@@ -62,6 +70,8 @@ Wir haben uns dazu entschlossen, nichts genaues zu planen und unsere Ideen bei d
 
 Ideen:
 Tower-based Rogue-like game
+
+Nach dem man alle Monster getötet hat, erscheint eine Treppe mit der man aufs nächste Level kann.
 
 Je höher man geht, desto stärkere Monster kommen und die schwierigkeit erhöht sich dadurch.
 
@@ -95,8 +105,13 @@ Bosses: Necron the Necromancer, Storm the Skycaster, Goldor the Titan, Maxor the
 | 11.A  | 03.04 | Nicola   | 45min | 60min |
 | 12.A  | 03.04 | Nicola   | 45min | 60min |
 | 13.A  | 03.04 | Nicola   | 15min | 15min |
+| X14.A | 27.03 | Nicola   | 180min | 180min |
+| X15.A | 27.03 | Carina   | 180min | 180min |
+| X16.A | 03.04 | Carina   | 180min | 180min |
+| X17.A | 03.04 | Nicola   | 180min | 180min |
 
 
 ## 5 Reflexion
 
-Ka
+Am Ende hat Nicola noch versucht, das Combat-System Funktionsfähig zu machen und mehr Monster einzufügen, während Carina die Treppe für den Übergang implementierte. Leider hatten wir nicht genügend Zeit, um es komplett fertig zu machen, aber wir haben einen Ansatz, an der wir weiter arbeiten können.
+Wir haben schon oft zusammen gearbeitet und ich denke, dass wir gut vorangekommen sind. Die Aufteilung hätten wir besser gestalten können um den Arbeitsweg zu verbessern. Es hatte auch ein paar Fehler vom ursprünglichen Code, wo wir die Lösung entweder in den Kommentaren oder selber suchen musste.
